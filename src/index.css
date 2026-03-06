@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#page-wrapper{
+    width: 80vw;
+    background-color: antiquewhite;
+    margin: auto;
+}
+
+
+#nav-main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+main{
+    width: 70%;
+    height: 110vh;
+    text-align: center;
+    font-size: calc(2px + 1.5vw);
+
+}
+
+main *{
+    margin: 2%;
+}
+
+nav{
+    width: 30%;
+    background-color: #301d22;
+    text-align: center;
+}
+
+nav ul{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav li{
+    border: 3px solid #593438;
+    margin: 5% auto;
+    width: 80%;
+    padding: 1%;
+}
+
+nav a{
+    color: #0f736f;
+    font-size: calc(2px + 1.3vw);
+    text-decoration: none;
+}
+
+main img{
+    max-width: 50%;
+}
+
+header, footer{
+    padding: 2%;
+    background-color: #4f2f38;
+    font-size: calc(2px + 1.5vw);
+    text-align:left;
+    text-decoration: none;
+    color: #dfaeae;
+}
+
+footer a{
+    color: #d88989;
+}
+
+
+
+@media  screen and (max-width: 750px){
+    #nav-main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page-wrapper{
+        width: 80vw;
+    }
+
+    nav{
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: row;
+    }
+
+    header{
+        text-align: center;
+    }
+
+}
+
+.points{
+    margin-left: 1%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 6%;
+}
+
+.points li{
+    margin: 1% 0;
+    text-align: left;
+}
+
+@media screen and (max-width: 1000px){
+    main{
+        width:100%;
+    }
+}
+
+.contact-table{
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    font-size: calc(2px + 1.3vw);
+}
+
+.contact-table th,
+.contact-table td{
+    border: 2px solid #593438;
+    padding: 12px;
+    text-align: center;
+    background-color: #fff5ea;
+}
+
+.contact-table th{
+    background-color: #4f2f38;
+    color: #dfaeae;
+}
+
+
+
+#calculator{
+    background-color: #fff5ea;
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+    text-align: center;
+}
+
+#calc-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#calculator button{
+    background-color: #4f2f38;
+    color: #dfaeae;
+    padding: 8px;
+    font-size: calc(2px + 1.3vw);
+}
+
+#calculator input{
+    width: 40%;
+    padding: 8px;
+    font-size: calc(2px + 1.3vw);
+    text-align: center;
+}
+
+#output{
+    font-size: calc(2px + 1.5vw);
+}
